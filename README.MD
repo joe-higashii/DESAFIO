@@ -2,7 +2,7 @@
 
 #  Projeto Neki Skills
 
-Projeto desenvolvido para a segunda Etapa do Processo Seletivo Neki
+Projeto desenvolvido para a segunda Etapa do Processo Seletivo da Neki
 
 ## Tecnologias e Ferramentas utilizadas 🤖
 - React-Native Expo
