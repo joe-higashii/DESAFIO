@@ -1,0 +1,54 @@
+POST http://localhost:8080/api/users/register
+Content-Type: application/json
+
+{
+    "username": "jose",
+    "password": "1234"
+}
+
+###
+
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "lucia@email.com",
+    "password": "1234"
+}
+
+###
+
+GET http://localhost:8080/api/skills
+Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqb3NlIiwiZXhwIjoxNzA0Njk5OTQyfQ.I_97mii772TPSlhjSJY9P56EiQV3ed5n8ipYdyvMPs_XH0YKczYmPd2YMiiYcjyQ5XucgPOKag9iL76OE2kS_g
+
+###
+
+GET http://localhost:8080/api/skills/2
+Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqb3NlIiwiZXhwIjoxNzA0Njk5OTQyfQ.I_97mii772TPSlhjSJY9P56EiQV3ed5n8ipYdyvMPs_XH0YKczYmPd2YMiiYcjyQ5XucgPOKag9iL76OE2kS_g
+
+###
+
+POST http://localhost:8080/api/user-skills
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqb3NlIiwiZXhwIjoxNzA0Njk5OTQyfQ.I_97mii772TPSlhjSJY9P56EiQV3ed5n8ipYdyvMPs_XH0YKczYmPd2YMiiYcjyQ5XucgPOKag9iL76OE2kS_g
+
+{
+    "userId": 1,
+    "skillId": 2,
+    "level": "INTERMEDIARIO"
+}
+
+###
+
+GET http://localhost:8080/api/users
+Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqb3NlIiwiZXhwIjoxNzA0Njk5OTQyfQ.I_97mii772TPSlhjSJY9P56EiQV3ed5n8ipYdyvMPs_XH0YKczYmPd2YMiiYcjyQ5XucgPOKag9iL76OE2kS_g
+
+###
+
+GET http://localhost:8080/api/user-skills/user/1
+Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJsdWNpYUBlbWFpbC5jb20iLCJleHAiOjE3MDQ3NjYxMzh9.8fURSuxZg6TMfF5O7RDNx8BFQ_2bwCP7usdo5vy3_MBz3_eltoW-M1gizB3dSuYH2Xe4nqiB00z72HZVVSKaTQ
+
+###
+
+PUT http://localhost:8080/api/user-skills/1?newLevel=AVANCADO
+Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJsdWNpYUBlbWFpbC5jb20iLCJleHAiOjE3MDQ3NjYxMzh9.8fURSuxZg6TMfF5O7RDNx8BFQ_2bwCP7usdo5vy3_MBz3_eltoW-M1gizB3dSuYH2Xe4nqiB00z72HZVVSKaTQ
